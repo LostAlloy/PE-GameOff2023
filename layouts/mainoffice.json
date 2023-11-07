@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6455105703311491,
+    "zoomFactor": 1.134371579716097,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,20 +32,59 @@
       "name": "PlayerSemi",
       "persistentUuid": "d6578fd0-77d5-493b-91df-5415e902cf81",
       "width": 0,
-      "x": 647,
-      "y": 303,
+      "x": 232,
+      "y": 164,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 320,
+      "layer": "Office",
+      "name": "MainOffice",
+      "persistentUuid": "e02f1c09-c885-48b5-bd67-cf396815e06b",
+      "width": 480,
+      "x": 0,
+      "y": 20,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "MainOffice",
+      "type": "TileMap::TileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "Source\\Exported\\Environment\\Tilemaps\\MainOffice.json",
+        "tilesetJsonFile": "",
+        "tilemapAtlasImage": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles.png",
+        "displayMode": "index",
+        "layerIndex": 1,
+        "levelIndex": 0,
+        "animationSpeedScale": 1,
+        "animationFps": 4
+      }
+    }
+  ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "NewFolder"
+        "folderName": "NewFolder",
+        "children": [
+          {
+            "objectName": "MainOffice"
+          }
+        ]
       }
     ]
   },
@@ -53,19 +92,7 @@
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "2",
-            "",
-            ""
-          ]
-        }
-      ]
+      "actions": []
     }
   ],
   "layers": [
@@ -94,6 +121,38 @@
           "width": 0
         }
       ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Office",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
