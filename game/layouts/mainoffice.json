@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 43,
   "disableInputWhenNotFocused": true,
   "mangledName": "MainOffice",
   "name": "MainOffice",
-  "r": 209,
+  "r": 32,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 30,
   "uiSettings": {
     "grid": false,
     "gridType": "rectangular",
@@ -18,17 +18,83 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 1.134371579716097,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Player",
+      "name": "PlayerSemi",
+      "persistentUuid": "d6578fd0-77d5-493b-91df-5415e902cf81",
+      "width": 0,
+      "x": 232,
+      "y": 164,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 320,
+      "layer": "Office",
+      "name": "MainOffice",
+      "persistentUuid": "e02f1c09-c885-48b5-bd67-cf396815e06b",
+      "width": 480,
+      "x": 0,
+      "y": 20,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "MainOffice",
+      "type": "TileMap::TileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "Source\\Exported\\Environment\\Tilemaps\\MainOffice.json",
+        "tilesetJsonFile": "",
+        "tilemapAtlasImage": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles.png",
+        "displayMode": "index",
+        "layerIndex": 1,
+        "levelIndex": 0,
+        "animationSpeedScale": 1,
+        "animationFps": 4
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "NewFolder",
+        "children": [
+          {
+            "objectName": "MainOffice"
+          }
+        ]
+      }
+    ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -72,7 +138,104 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Office",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Player",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    }
+  ]
 }
