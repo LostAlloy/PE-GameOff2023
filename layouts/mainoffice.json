@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.134371579716097,
+    "zoomFactor": 0.9296875000000014,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -35,21 +35,6 @@
       "x": 232,
       "y": 164,
       "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 320,
-      "layer": "Environment",
-      "name": "MainOffice",
-      "persistentUuid": "e02f1c09-c885-48b5-bd67-cf396815e06b",
-      "width": 480,
-      "x": 0,
-      "y": 20,
-      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -163,28 +148,96 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewBitmapText",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping",
+          "Interval": 0.07,
+          "CharacterJustAdded": false,
+          "CurrentCharacter": ""
+        }
+      ],
+      "content": {
+        "text": "This text use the default bitmap font.\nUse a custom Bitmap Font to create your own texts.",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "",
+        "textureAtlasResourceName": "",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "NewTiledSprite",
+      "texture": "",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "NewFolder",
-        "children": [
-          {
-            "objectName": "BubbleTest"
-          },
-          {
-            "objectName": "MainOffice"
-          }
-        ]
+        "objectName": "MainOffice"
+      },
+      {
+        "objectName": "BubbleTest"
+      },
+      {
+        "objectName": "NewBitmapText"
+      },
+      {
+        "objectName": "NewTiledSprite"
       }
     ]
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            },
+            {
+              "type": {
+                "value": "SpriteMultitouchJoystick::IsButtonPressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "actions": []
     }
   ],
@@ -399,6 +452,10 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "BitmapText_AutoTyping",
+      "type": "AutoTyping::BitmapText_AutoTyping"
+    },
+    {
       "name": "DialogBoxBackGround",
       "type": "DialogBox::DialogBoxBackGround"
     },
@@ -425,6 +482,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

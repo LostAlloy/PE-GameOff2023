@@ -269,6 +269,24 @@
         "name": "NewSprite",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_Idlefront01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_Idlefront02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront02.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -315,11 +333,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.5,
+              "timeBetweenFrames": 1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle1.png",
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -355,7 +373,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle2.png",
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -391,115 +409,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle6.png",
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -692,295 +602,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Semi_Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Victory",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Victory3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Victory4",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Dead",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\Player_Dead.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     }
@@ -1019,6 +640,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/objectpickingtools"
