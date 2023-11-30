@@ -332,332 +332,85 @@
         "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/Portraits.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\Portraits.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_18.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "PlayerSemi",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown",
-          "Up": "w",
-          "Left": "a",
-          "Right": "d",
-          "Down": "s",
-          "Topdown": "TopDownMovement"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "maxSpeed": 200,
-          "acceleration": 10000,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 10000,
-          "ignoreDefaultControls": false,
-          "movementAngleOffset": 0,
-          "rotateObject": false,
-          "viewpoint": "TopDown"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Semi_Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront01.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront02.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Walk",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "objects": [],
   "objectsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "objectName": "PlayerSemi"
-      }
-    ]
+    "folderName": "__ROOT"
   },
   "objectsGroups": [],
   "variables": [],

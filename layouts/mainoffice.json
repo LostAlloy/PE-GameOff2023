@@ -18,27 +18,12 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 2.871051280997039,
+    "zoomFactor": 1.4790395861757528,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "Player",
-      "name": "PlayerSemi",
-      "persistentUuid": "d6578fd0-77d5-493b-91df-5415e902cf81",
-      "width": 0,
-      "x": 864,
-      "y": 896,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -59,8 +44,8 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 160,
-      "layer": "Environment",
+      "height": 128,
+      "layer": "",
       "name": "WallBorderLeft",
       "persistentUuid": "2988a45c-fddb-4ad3-9672-aff632b6a6e9",
       "width": 32,
@@ -76,7 +61,7 @@
       "customSize": true,
       "depth": 1,
       "height": 32,
-      "layer": "Environment",
+      "layer": "",
       "name": "WallBorderBottom",
       "persistentUuid": "83538f10-e2bf-4112-b689-03a901b0c266",
       "width": 352,
@@ -89,14 +74,15 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 192,
       "layer": "",
       "name": "WallBorderRight",
       "persistentUuid": "59f273d7-041e-44c5-9879-ed4e42ba1791",
-      "width": 0,
+      "width": 32,
       "x": 1120,
-      "y": 832,
+      "y": 800,
       "zOrder": 102,
       "numberProperties": [],
       "stringProperties": [],
@@ -107,13 +93,44 @@
       "customSize": true,
       "depth": 1,
       "height": 96,
-      "layer": "Environment",
+      "layer": "",
       "name": "WallBorderLeft",
       "persistentUuid": "a0ee8ca1-b88b-49cd-ac9e-d3cf74d833bf",
       "width": 32,
       "x": 736,
       "y": 896,
       "zOrder": 103,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "",
+      "name": "WallBorderRight",
+      "persistentUuid": "e6022c36-f3ff-41bd-ad61-d6ed112b5141",
+      "width": 32,
+      "x": 1088,
+      "y": 736,
+      "zOrder": 104,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "PlayerSemi",
+      "persistentUuid": "5402e1f2-c46f-46b1-a206-db6cc0469af0",
+      "width": 0,
+      "x": 928,
+      "y": 928,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -219,6 +236,196 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "PlayerSemi",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "acceleration": 10000,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 50000,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 300,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        },
+        {
+          "name": "TopDownMovementAnimator",
+          "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+          "TopDownMovement": "TopDownMovement",
+          "IsScalingAnimation": true,
+          "AnimationName": "Walk",
+          "DirectionCount": 4,
+          "AngleOffset": 0,
+          "AnimationDirection": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "PlayerSemi_Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.5,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PlayerSemi_WalkFront",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.25,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -244,6 +451,9 @@
       },
       {
         "objectName": "WallBorderBottom"
+      },
+      {
+        "objectName": "PlayerSemi"
       }
     ]
   },
@@ -253,34 +463,26 @@
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::Or"
+            "value": "DepartScene"
           },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "e"
-              ]
-            },
-            {
-              "type": {
-                "value": "SpriteMultitouchJoystick::IsButtonPressed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"A\"",
-                ""
-              ]
-            }
+          "parameters": [
+            ""
           ]
         }
       ],
-      "actions": []
+      "actions": [
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "4",
+            "",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -337,71 +539,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Props",
-      "renderingType": "2d",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Environment",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Interactables",
+      "name": "UI",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -435,38 +573,6 @@
       "isLocked": false,
       "name": "Speech",
       "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Player",
-      "renderingType": "2d",
       "visibility": true,
       "cameras": [],
       "effects": [
@@ -528,6 +634,12 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "TopDownMovementAnimator",
+      "type": "TopDownMovementAnimator::TopDownMovementAnimator",
+      "NewAnimationDirection": 0,
+      "AnimationFrame": 0
     }
   ]
 }
