@@ -9,7 +9,7 @@
   "title": "",
   "v": 30,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.9296875000000014,
+    "snap": true,
+    "zoomFactor": 2.871051280997039,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,9 +32,57 @@
       "name": "PlayerSemi",
       "persistentUuid": "d6578fd0-77d5-493b-91df-5415e902cf81",
       "width": 0,
-      "x": 232,
-      "y": 164,
+      "x": 864,
+      "y": 896,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1344,
+      "layer": "",
+      "name": "Floor_MainBase",
+      "persistentUuid": "94bd0850-84d3-4c8a-9df9-e82650c1a7e5",
+      "width": 1728,
+      "x": -128,
+      "y": -128,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 160,
+      "layer": "Environment",
+      "name": "WallBorderLeft",
+      "persistentUuid": "2988a45c-fddb-4ad3-9672-aff632b6a6e9",
+      "width": 32,
+      "x": 768,
+      "y": 736,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "Environment",
+      "name": "WallBorderBottom",
+      "persistentUuid": "83538f10-e2bf-4112-b689-03a901b0c266",
+      "width": 352,
+      "x": 768,
+      "y": 992,
+      "zOrder": 101,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -43,13 +91,29 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "Speech",
-      "name": "BubbleTest",
-      "persistentUuid": "4eb09a1d-f7a2-465f-8749-da109b2d6c6b",
+      "layer": "",
+      "name": "WallBorderRight",
+      "persistentUuid": "59f273d7-041e-44c5-9879-ed4e42ba1791",
       "width": 0,
-      "x": 496,
-      "y": 195,
-      "zOrder": 11,
+      "x": 1120,
+      "y": 832,
+      "zOrder": 102,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "layer": "Environment",
+      "name": "WallBorderLeft",
+      "persistentUuid": "a0ee8ca1-b88b-49cd-ac9e-d3cf74d833bf",
+      "width": 32,
+      "x": 736,
+      "y": 896,
+      "zOrder": 103,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -73,81 +137,6 @@
         "animationSpeedScale": 1,
         "animationFps": 4
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "BubbleTest",
-      "persistentUuid": "664c889b-5529-4c04-92f6-69024ecffcc9",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "DialogBoxBackGround",
-          "type": "DialogBox::DialogBoxBackGround",
-          "Interval": 0.05,
-          "Se": "",
-          "Tween": "Tween",
-          "Duration": 250
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 2,
-                        "y": 14
-                      },
-                      {
-                        "x": 63,
-                        "y": 14
-                      },
-                      {
-                        "x": 63,
-                        "y": 59
-                      },
-                      {
-                        "x": 2,
-                        "y": 59
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "assetStoreId": "",
@@ -179,8 +168,52 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "NewTiledSprite",
-      "texture": "",
+      "name": "Floor_MainBase",
+      "texture": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_28.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WallBorderLeft",
+      "texture": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_13.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WallBorderBottom",
+      "texture": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_6.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WallBorderRight",
+      "texture": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WallBorderTop",
+      "texture": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_13.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -195,13 +228,22 @@
         "objectName": "MainOffice"
       },
       {
-        "objectName": "BubbleTest"
-      },
-      {
         "objectName": "NewBitmapText"
       },
       {
-        "objectName": "NewTiledSprite"
+        "objectName": "Floor_MainBase"
+      },
+      {
+        "objectName": "WallBorderLeft"
+      },
+      {
+        "objectName": "WallBorderRight"
+      },
+      {
+        "objectName": "WallBorderTop"
+      },
+      {
+        "objectName": "WallBorderBottom"
       }
     ]
   },
@@ -327,38 +369,6 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Player",
-      "renderingType": "2d",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
       "name": "Environment",
       "renderingType": "",
       "visibility": true,
@@ -444,6 +454,38 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Player",
+      "renderingType": "2d",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -454,10 +496,6 @@
     {
       "name": "BitmapText_AutoTyping",
       "type": "AutoTyping::BitmapText_AutoTyping"
-    },
-    {
-      "name": "DialogBoxBackGround",
-      "type": "DialogBox::DialogBoxBackGround"
     },
     {
       "name": "Effect",
@@ -490,10 +528,6 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-    },
-    {
-      "name": "Tween",
-      "type": "Tween::TweenBehavior"
     }
   ]
 }

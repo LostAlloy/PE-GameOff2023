@@ -287,6 +287,51 @@
         "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront02.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_28.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -640,6 +685,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritesheet"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/autotyping"
