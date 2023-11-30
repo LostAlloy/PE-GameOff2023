@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 2.686796875000022,
+    "zoomFactor": 1.9284316855173802,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -256,6 +256,9 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "maxSpeed": 150,
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 10000,
           "allowDiagonals": false,
           "angleOffset": 0,
@@ -263,11 +266,8 @@
           "customIsometryAngle": 30,
           "deceleration": 50000,
           "ignoreDefaultControls": false,
-          "maxSpeed": 300,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         },
         {
@@ -346,7 +346,7 @@
           ]
         },
         {
-          "name": "PlayerSemi_WalkFront",
+          "name": "PlayerSemi_WalkDown",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -424,8 +424,118 @@
               ]
             }
           ]
+        },
+        {
+          "name": "PlayerSemi_WalkLeft",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": []
+            }
+          ]
+        },
+        {
+          "name": "PlayerSemi_WalkUp",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_20.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewTileMapMask",
+      "type": "TileMap::CollisionMask",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "",
+        "tilesetJsonFile": "",
+        "collisionMaskTag": "",
+        "debugMode": false,
+        "fillColor": "255;255;255",
+        "outlineColor": "255;255;255",
+        "fillOpacity": 64,
+        "outlineOpacity": 128,
+        "outlineSize": 1
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -454,6 +564,9 @@
       },
       {
         "objectName": "PlayerSemi"
+      },
+      {
+        "objectName": "NewTileMapMask"
       }
     ]
   },
@@ -489,7 +602,7 @@
           },
           "parameters": [
             "",
-            "4",
+            "3",
             "",
             ""
           ]
@@ -513,6 +626,94 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "TopDownMovement",
+            "\"Down\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "Animation",
+            "=",
+            "\"PlayerSemi_WalkDown\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "TopDownMovement",
+            "\"Up\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "Animation",
+            "=",
+            "\"PlayerSemi_WalkUp\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "TopDownMovement",
+            "\"Left\""
+          ]
+        }
+      ],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "TopDownMovement",
+            "\"Right\""
+          ]
+        }
+      ],
+      "actions": []
     }
   ],
   "layers": [

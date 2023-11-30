@@ -10,7 +10,6 @@
   "shortDescription": "Animate a tiled sprite from a sprite sheet.",
   "version": "1.0.0",
   "description": [
-    "",
     "Animate images from a sprite sheet by using a tiled sprite.",
     "",
     "## How to use",

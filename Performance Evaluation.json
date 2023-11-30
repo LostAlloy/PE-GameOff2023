@@ -19,12 +19,12 @@
     "sizeOnStartupMode": "adaptHeight",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "version": "0.0.1",
     "name": "Performance Evaluation",
     "description": "",
     "author": "",
-    "windowWidth": 1440,
-    "windowHeight": 1080,
+    "windowWidth": 800,
+    "windowHeight": 600,
     "latestCompilationDirectory": "V:\\LOSTALLOY\\CLARISSA sandbox\\PE-GameOff2023\\Builds",
     "maxFPS": 60,
     "minFPS": 20,
@@ -404,6 +404,42 @@
         "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_18.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_20.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
