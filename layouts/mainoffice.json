@@ -134,6 +134,54 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "",
+      "name": "CollisionBase",
+      "persistentUuid": "b97b8c7f-e1e6-4c29-9065-c98d25d1c060",
+      "width": 352,
+      "x": 768,
+      "y": 992,
+      "zOrder": 1001,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "",
+      "name": "CollisionBase",
+      "persistentUuid": "fceed9b0-1414-4acf-86e5-b8b71ad99ee5",
+      "width": 32,
+      "x": 1088,
+      "y": 736,
+      "zOrder": 1002,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 192,
+      "layer": "",
+      "name": "CollisionBase",
+      "persistentUuid": "f3a832f4-4535-4ee8-b16c-68f99c39a9f8",
+      "width": 32,
+      "x": 1120,
+      "y": 800,
+      "zOrder": 1003,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -269,16 +317,6 @@
           "movementAngleOffset": 0,
           "rotateObject": false,
           "viewpoint": "TopDown"
-        },
-        {
-          "name": "TopDownMovementAnimator",
-          "type": "TopDownMovementAnimator::TopDownMovementAnimator",
-          "TopDownMovement": "TopDownMovement",
-          "IsScalingAnimation": true,
-          "AnimationName": "Walk",
-          "DirectionCount": 4,
-          "AngleOffset": 0,
-          "AnimationDirection": 0
         }
       ],
       "animations": [
@@ -288,8 +326,25 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.5,
+              "timeBetweenFrames": 0.25,
               "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
                 {
                   "hasCustomCollisionMask": false,
                   "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_3.png",
@@ -536,6 +591,33 @@
         "outlineOpacity": 128,
         "outlineSize": 1
       }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "FloorBase",
+      "rightMargin": 0,
+      "texture": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_SliceFloor.png",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "CollisionBase",
+      "texture": "CyanBlock2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -567,6 +649,12 @@
       },
       {
         "objectName": "NewTileMapMask"
+      },
+      {
+        "objectName": "FloorBase"
+      },
+      {
+        "objectName": "CollisionBase"
       }
     ]
   },
@@ -623,6 +711,30 @@
             "",
             "",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "CollisionBase",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "CollisionBase"
           ]
         }
       ]
@@ -714,6 +826,62 @@
         }
       ],
       "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::Speed"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "TopDownMovement",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "Animation",
+            "=",
+            "\"PlayerSemi_Idle\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "AnyKeyPressed"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "PlayerSemi",
+            "Animation",
+            "=",
+            "\"PlayerSemi_Idle\""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -865,12 +1033,6 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-    },
-    {
-      "name": "TopDownMovementAnimator",
-      "type": "TopDownMovementAnimator::TopDownMovementAnimator",
-      "NewAnimationDirection": 0,
-      "AnimationFrame": 0
     }
   ]
 }
