@@ -13,23 +13,52 @@
     "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "pixelsRounding": true,
+    "pixelsRounding": false,
     "projectUuid": "44b7f916-6dcb-47fb-aa3c-f12ac7b98304",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptHeight",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "version": "0.1.0",
     "name": "Performance Evaluation",
     "description": "",
     "author": "",
-    "windowWidth": 480,
-    "windowHeight": 360,
-    "latestCompilationDirectory": "",
+    "windowWidth": 800,
+    "windowHeight": 600,
+    "latestCompilationDirectory": "V:\\LOSTALLOY\\CLARISSA sandbox\\PE-GameOff2023\\Builds\\0.0.1",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "android-icon-144.png",
+      "android-icon-192": "android-icon-192.png",
+      "android-icon-36": "android-icon-36.png",
+      "android-icon-48": "android-icon-48.png",
+      "android-icon-72": "android-icon-72.png",
+      "android-icon-96": "android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "android-windowSplashScreenAnimatedIcon.png",
+      "desktop-icon-512": "desktop-icon-512.png",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-1024": "ios-icon-1024.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-20": "ios-icon-20.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png",
+      "ios-icon-87": "ios-icon-87.png",
+      "liluo-thumbnail": ""
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -48,10 +77,14 @@
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "PTqLEo4wyShTNsrvobYpi3O1zok1"
+    ],
+    "authorUsernames": [
+      "maruki"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -260,756 +293,562 @@
         "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_Idlefront01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_Idlefront02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idlefront02.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_28.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/Portraits.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\Portraits.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_18.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Characters/Animation/SemiMovements_2bit_Slices/PlayerSemiMov_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Characters\\Animation\\SemiMovements_2bit_Slices\\PlayerSemiMov_20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_Slice 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_Slice 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Source/Exported/Environment/Performance Evaluation_BaseTiles2bit_Slices/Performance Evaluation_BaseTiles2bit_SliceFloor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Source\\Exported\\Environment\\Performance Evaluation_BaseTiles2bit_Slices\\Performance Evaluation_BaseTiles2bit_SliceFloor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BlueBlock.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BlueBlock",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CyanBlock.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "CyanBlock",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CyanBlock2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "CyanBlock2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-96.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-48.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-20.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "PlayerSemi",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown",
-          "Up": "w",
-          "Left": "a",
-          "Right": "d",
-          "Down": "s",
-          "Topdown": "TopDownMovement"
-        },
-        {
-          "maxSpeed": 200,
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 10000,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 10000,
-          "ignoreDefaultControls": false,
-          "movementAngleOffset": 0,
-          "rotateObject": false,
-          "viewpoint": "TopDown"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Semi_Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Idle6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Walk",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Walk4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Run",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\SemiMovements_Run4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Victory",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Victory3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Victory4",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Semi_Dead",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Source\\Exported\\Characters\\Animation\\Player_Dead.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 1
-                      },
-                      {
-                        "x": 31,
-                        "y": 32
-                      },
-                      {
-                        "x": 1,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "objects": [],
   "objectsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "objectName": "PlayerSemi"
-      }
-    ]
+    "folderName": "__ROOT"
   },
   "objectsGroups": [],
   "variables": [],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/title"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/credits"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/mainoffice"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/waitingroom"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/hroffice"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritesheet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectpickingtools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/chatbubble"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/pixelperfectmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/dialogbox"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/roombasedcameramovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/slotsystem"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/camerashake"
